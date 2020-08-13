@@ -1,7 +1,9 @@
 <template>
   <div class="login-view">
-    <img alt="Vue logo" src="@/assets/logo.png">
-    <LoginForm :onSubmit="onSubmit" :error="error" :loading="loading" />
+    <div class="login-box">
+      <img alt="Validus logo" src="@/assets/validus.png">
+      <LoginForm :onSubmit="onSubmit" :error="error" :loading="loading" />
+    </div>
   </div>
 </template>
 
@@ -46,7 +48,18 @@ export default class Login extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.img {
-  width: 100px;
+.login-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 16px);
+}
+.login-box {
+  width: 100%;
+}
+img {
+  width: 150px;
 }
 </style>

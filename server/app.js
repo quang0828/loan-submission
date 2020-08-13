@@ -2,6 +2,9 @@ const express = require('express')
 const userRouter = require('./routers/user')
 const loanRouter = require('./routers/loan')
 const cors = require('cors')
+const path = require('path'); 
+require('dotenv').config({ path: path.join(__dirname, '.env') });
+
 
 const app = express()
 require('./db/db')

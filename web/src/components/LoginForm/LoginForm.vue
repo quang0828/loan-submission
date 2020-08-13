@@ -1,6 +1,5 @@
 <template>
   <div id="login-form">
-    <h1>Application</h1>
     <p class="error">{{ error }}<p>
     <form @submit="onSubmitHandler">
       <FormGroup label="Email">
